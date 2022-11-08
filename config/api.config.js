@@ -10,8 +10,8 @@
 module.exports = {
   // The clientId and clientSecret are used to authenticate the user with Microsoft Graph API using OAuth. You would
   // not need to change anything here if you can authenticate with your personal Microsoft account with OneDrive International.
-  clientId: 'd87bcc39-1750-4ca0-ad54-f8d0efbb2735',
-  obfuscatedClientSecret: 'U2FsdGVkX1830zo3/pFDqaBCVBb37iLw3WnBDWGF9GIB2f4apzv0roemp8Y+iIxI3Ih5ecyukqELQEGzZlYiWg==',
+  clientId: '9d4d6584-a0a8-4dd6-af87-2920ebb14201',
+  obfuscatedClientSecret: 'U2FsdGVkX1/7kXg3UjDNsuoI+rXhuV6j1EWlwBKAvyCj9EjmYzyz48VU5eHxNNiUPpZs2kQXEV5LcOn7QiL7nA==',
 
   // The redirectUri is the URL that the user will be redirected to after they have authenticated with Microsoft Graph API.
   // Likewise, you would not need to change redirectUri if you are using your personal Microsoft account with OneDrive International.
@@ -23,7 +23,7 @@ module.exports = {
   driveApi: 'https://graph.microsoft.com/v1.0/me/drive',
 
   // The scope we require are listed here, in most cases you would not need to change this as well.
-  scope: 'user.read files.read.all offline_access',
+  scope: 'Files.Read user.read files.read.all offline_access Files.ReadWrite Files.ReadWrite.All',
 
   // Cache-Control header, check Vercel documentation for more details. The default settings imply:
   // - max-age=0: no cache for your browser
